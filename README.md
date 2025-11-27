@@ -1,5 +1,5 @@
 
-# LOHUM Summer Intern Problem Statement — Battery Analysis
+# LOHUM Problem Statement — Battery Analysis
 
 This repository implements the full pipeline for the LOHUM Summer Intern assignment:
 
@@ -17,7 +17,7 @@ This repository implements the full pipeline for the LOHUM Summer Intern assignm
 - `feature_engineering.py` — target computation (SOH, SOP) and predictive feature extraction.
 - `soh_sop_model.py` — training + evaluation script for SOH and SOP models.
 - `Analysis_Report.pdf` — written report explaining methodology and findings.
-- `models/` — saved model artifacts (`SOH_model.pkl`, `SOP_model.pkl`) after you run training.
+- `models/` — saved model artifacts (`SOH_model.pkl`, `SOP_model.pkl`) after I run training.
 - `metrics.csv` — model performance metrics (generated after training).
 - `requirements.txt` — Python dependencies.
 
@@ -32,7 +32,6 @@ data/
   OEM3/  # third folder of 10 text files
 ```
 
-Put the exact `.txt` files you were given for each OEM into the corresponding folder.
 
 ## Setup
 
@@ -64,16 +63,3 @@ The script will:
    - `models/SOH_model.pkl`
    - `models/SOP_model.pkl`
    - `metrics.csv` with RMSE, MAE, MAPE for each target.
-
-## What You Need to Upload to GitHub
-
-- All `.py` files:
-  - `data_loader.py`
-  - `feature_engineering.py`
-  - `soh_sop_model.py`
-- `Analysis_Report.pdf`
-- `requirements.txt`
-- Optionally, the `models/` folder and `metrics.csv` after you run training.
-- (If allowed) a small sample of the `.txt` files or instructions on how to obtain them.
-
-This setup should be sufficient to fully reproduce the analysis and satisfy the assignment requirements.
